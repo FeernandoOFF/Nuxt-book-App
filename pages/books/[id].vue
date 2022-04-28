@@ -1,5 +1,5 @@
 <template>
-  <AppContainer>
+  <AppContainer link="/" icon="↺">
     <div class="title">
       <h2>Book Title: {{ data.title }} </h2>
       <p>

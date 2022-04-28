@@ -7,7 +7,7 @@
       <Meta name="description" content="A programing test using books API with Nuxt" />
     </Head>
 
-    <AppContainer>
+    <AppContainer icon="♚">
       <h2>
         Ready for the Reading?
       </h2>

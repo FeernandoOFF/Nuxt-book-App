@@ -1,6 +1,6 @@
 <template>
   <div class="book">
-    <h5> {{ props.book.title }} - {{ props.book.author }} </h5>
+    <h5> {{ props.book.title }} </h5>
     <NuxtLink :to="'/books/' + props.book.id">
       <div class="arrow">
         >

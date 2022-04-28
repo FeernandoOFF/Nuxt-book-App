@@ -2,10 +2,12 @@
 <template>
   <div class="container">
     <nav class="headerNav">
-      <div class="burger icon "></div>
+      <a :href="link" class="burger icon ">
+        {{ icon }}
+      </a>
       <div class="rightNav">
-        <div class="icon"></div>
-        <div class="icon"></div>
+        <div class="icon disabled">↯ </div>
+        <div class="icon disabled">☀</div>
 
       </div>
 
@@ -16,6 +18,16 @@
 
   </div>
 </template>
+
+<script setup lang="ts">
+
+interface Props {
+  link?: string,
+  icon?: string;
+}
+const { link, icon } = defineProps<Props>()
+</script>
+
 <style>
 .container {
   width: min(100vw, 900px);
@@ -41,13 +53,23 @@
 
 }
 
+
+
 .icon {
   width: 30px;
   height: 30px;
   border-radius: 100%;
   margin-right: 20px;
 
+  display: grid;
+  place-items: center;
   background: #fff;
+  cursor: pointer;
+}
+
+.disabled {
+  cursor: not-allowed;
+  color: #ccc
 }
 
 @media screen and (min-width: 758px) {
