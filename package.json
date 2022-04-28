@@ -1,0 +1,18 @@
+{
+  "private": true,
+  "scripts": {
+    "build": "nuxt build",
+    "dev": "nuxt dev",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview"
+  },
+  "devDependencies": {
+    "naive-ui": "^2.28.2",
+    "nuxt": "3.0.0-rc.1"
+  },
+  "dependencies": {
+    "@vueuse/motion": "^2.0.0-beta.12",
+    "coc-nuxt-iview": "^4.0.1",
+    "iview": "^3.5.4"
+  }
+}
