@@ -1,0 +1,38 @@
+{
+  "node_modules/nuxt/dist/app/entry.mjs": {
+    "file": "entry-7b9e64a0.mjs",
+    "src": "node_modules/nuxt/dist/app/entry.mjs",
+    "isEntry": true,
+    "dynamicImports": [
+      "pages/books/[id].vue",
+      "pages/index.vue"
+    ],
+    "css": [
+      "entry.1c964b66.css"
+    ]
+  },
+  "pages/books/[id].vue": {
+    "file": "_id_-e0e0a68c.mjs",
+    "src": "pages/books/[id].vue",
+    "isDynamicEntry": true,
+    "imports": [
+      "_config-b5e7df64.mjs",
+      "node_modules/nuxt/dist/app/entry.mjs"
+    ]
+  },
+  "_config-b5e7df64.mjs": {
+    "file": "config-b5e7df64.mjs",
+    "imports": [
+      "node_modules/nuxt/dist/app/entry.mjs"
+    ]
+  },
+  "pages/index.vue": {
+    "file": "index-9f271acf.mjs",
+    "src": "pages/index.vue",
+    "isDynamicEntry": true,
+    "imports": [
+      "node_modules/nuxt/dist/app/entry.mjs",
+      "_config-b5e7df64.mjs"
+    ]
+  }
+}
