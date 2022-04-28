@@ -20,10 +20,11 @@ jobs:
         run: npm i
 
       - name: Build app
-        run: npm run generate
+        run: npm run build && npm run generate touch ./.output/public/.nojekyll
+
 
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@4.1.0
         with:
           BRANCH: gh-pages 
-          FOLDER: dist
+          FOLDER: .output/public 
