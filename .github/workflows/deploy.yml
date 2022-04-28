@@ -20,7 +20,7 @@ jobs:
         run: npm i
 
       - name: Build app
-        run: npm run generate && touch ./dist/.nojekyll
+        run: npm run generate
 
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@4.1.0
